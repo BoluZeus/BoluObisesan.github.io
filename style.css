@@ -343,10 +343,11 @@ section {
 
 .about-pic {
   width: 320px;
-  height: 360px;
+  height: 320px;
   object-fit: cover;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-hover);
+  border-radius: 50%;
+  border: 3px solid var(--green);
+  box-shadow: 0 0 0 8px var(--green-glow), var(--shadow-hover);
   flex-shrink: 0;
 }
 
