@@ -1,0 +1,83 @@
+/* ── TABLET (max 1200px) ── */
+@media screen and (max-width: 1200px) {
+  section { padding: 4rem 3rem; }
+  #about { padding: 4rem 3rem; margin: 0 1rem; }
+  #projects { padding: 4rem 3rem; margin: 0 1rem; }
+  #profile { gap: 4rem; }
+  .section__pic-container { width: 280px; height: 280px; }
+}
+
+/* ── SMALL LAPTOP (max 900px) ── */
+@media screen and (max-width: 900px) {
+  #desktop-nav { display: none; }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 64px;
+    background: rgba(250,250,248,0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,127,115,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+
+  #profile {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: unset;
+  }
+
+  .section__text__p1 { text-align: center; }
+  .section__pic-container { width: 220px; height: 220px; }
+
+  .btn-container { justify-content: center; }
+  #socials-container { justify-content: center; }
+
+  .section-container { flex-direction: column; gap: 2rem; }
+  .about-pic { width: 100%; height: 240px; }
+
+  .experience-details-container .about-containers {
+    grid-template-columns: 1fr;
+  }
+
+  .about-containers.projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  section { padding: 4rem 2rem; }
+  #about { margin: 0 0.5rem; padding: 3rem 2rem; }
+  #projects { margin: 0 0.5rem; padding: 3rem 2rem; }
+
+  .arrow { display: none; }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+}
+
+/* ── MOBILE (max 600px) ── */
+@media screen and (max-width: 600px) {
+  section { padding: 3rem 1.25rem; }
+  #about, #projects { margin: 0; border-radius: 1rem; padding: 2.5rem 1.25rem; }
+
+  .title { font-size: 2rem; }
+
+  .about-containers { flex-direction: column; }
+
+  .btn { padding: 0.65rem 1.25rem; font-size: 0.85rem; }
+
+  .article-container.project-img-wrap { height: 160px; }
+
+  nav { padding: 0 1.25rem; }
+  footer { padding: 1.5rem 1.25rem; }
+
+  .contact-info-upper-container { padding: 1.25rem; }
+  .contact-info-container p { font-size: 0.9rem; }
+}
